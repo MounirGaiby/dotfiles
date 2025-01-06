@@ -115,6 +115,7 @@ export PHP_INI_SCAN_DIR="/home/ryuga/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(/home/mounir/.local/bin/mise activate zsh)"
